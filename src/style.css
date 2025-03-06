@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    color: white;
+    margin: 0 20px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+
+header ul{
+    list-style-type: none;
+}
+header ul li {
+        display: inline-block;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+
+#menu{
+    display: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+.hero{
+    margin: 20px;
+    height: 400px;
+    background-color: #2F2D2E;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    box-shadow: 0px 2px 20px rgba(0, 0 , 0 , 0.7);
+}
+
+#services{
+    display: flex;
+    /* height: 400px; */
+    margin: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+#services .servlists{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    background-color: #040F0F;
+    box-shadow: 0 10px 15px rgba(0, 0 , 0 , 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img{
+    filter: brightness(0) invert(1); 
+    height: 100px;
+    width: 100px;
+}
+
+#services .servlists:hover{
+    background-color: #f6efee;
+    box-shadow: 0 15px 20px rgba(0, 0 , 0 , 0.5);
+    transition-duration: 0.8s;
+    border-radius: 10px;
+}
+
+img:hover{
+    filter: brightness(0) invert(0); 
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.advertise{
+    background-color: #004e89;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px; 
+}
+
+/* Index page responsive */
+
+@media  screen and (max-width: 768px){
+ 
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 25px;
+    }
+
+    #menu{
+       display: block;
+       line-height: 50px;
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        width: 70%;
+        right: 0;
+        flex-direction: column;
+    }
+    
+    nav a{
+        display: block;
+        font-size: 20px;
+        box-shadow: 0 3px 5px rgba(255,255 ,255 , 0.5);
+        border-radius: 10px;
+        margin: 3px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background-color: #151515;
+    }
+    .hero{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #services{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+     
+    }
+
+    #services .servlists{
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+    }
+}
+
+/* For about page */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #0c1618;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0 , 0 , 0.5);
+    color: white;
+    font-size: 25px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#about p{
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    #about{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+    
+}
+
+/* For namaz timings */
+
+#namaztimings tr{
+    background-color: #0c1618;
+    color: white;
+    border-radius: 10px; /* 20px border radius for each row */
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0 , 0 , 0.7);
+}
+
+#namaztimings{
+    display: flex;
+    justify-content: center;
+}
+
+#namaztimings table{
+    width: 100%;
+    /* border-collapse: separate; To allow border-spacing     */
+}
+
+#namaztimings tr:nth-child(1){
+    background-color: #151515;
+   
+}
+
+#namaztimings th{
+    font-size: 20px;
+}
+
+#namaztimings th, td{
+    padding: 20px;
+    
+}
+
+.salah .salahitems{
+    padding: 20px;
+    margin: 10px;
+    background-color: #151515;
+    box-shadow: 0 10px 15px rgba(0, 0 , 0 , 0.5);
+    color: white;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    border-radius: 10px;
+
+
+}
+.salah{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 20px;
+}
+.salah h1{
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+.salahitems h3:nth-child(2){
+    color: seagreen;
+}
+
+@media screen and (max-width: 770px) {
+     td{
+        font-size: 10px;
+        margin: 0;
+        padding: 05px;
+        /* border-radius: 5px; */
+    }
+    table th{
+        padding: 0;
+        margin: 0;
+        display: none;
+        
+    }
+    header ul{
+        display: none;
+    }
+    tr{
+        border-radius: 0px;
+    }
+    table{
+        width: 100%;
+        
+    }
+    .salah h1{
+        font-size: 25px;
+    }
+    table tr th:nth-child(7){
+        display: none;
+    }
+    table tr td:nth-child(7){
+        display: none;
+    }
+    
+}
+
+/* For contact page */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* border: 1px solid  black; */
+    padding: 30px;
+    font-size: 20px;
+    background-color: #2d2e2e;
+    width: 500px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0 , 0 , 0.5);
+}
+
+
+#contact form input,textarea{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    border: 0px solid black;
+    box-shadow: 0 1px 10px rgba(0, 0 , 0 , 0.5);
+    resize: vertical;
+    
+}
+
+#contact form input:focus{
+    outline: none;
+    box-shadow: 0 1px 10px rgba(255,255 ,255 , 0.5);
+   
+    
+}
+#contact form textarea:focus{
+    outline: none;
+    box-shadow: 0 1px 10px rgba(255,255 ,255 , 0.5);
+    resize: vertical;
+    
+}
+#contact form input[type="SUBMIT"]{
+    background-color: #9BC53D;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    #contact form {
+        margin: 30px;
+        
+    }
+    
+}
