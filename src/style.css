@@ -65,7 +65,7 @@ header ul li a{
 #services{
     display: flex;
     /* height: 400px; */
-    margin: 20px;
+    margin: 30px;
     /* align-items: center; */
     /* justify-content: center; */
 }
@@ -83,9 +83,18 @@ header ul li a{
 
 
 img{
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);  
     height: 100px;
-    width: 100px;
+    width: 100px; 
+}
+
+#mvs{
+    height: 300px;
+    width:90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0 , 0 , 0.5);
+    filter: brightness(1) invert(0); 
 }
 
 #services .servlists:hover{
@@ -108,7 +117,7 @@ a{
     color: white;
     font-size: 25px;
     text-align: center;
-    margin: 20px;
+    margin: 20px 20px 50px;
     border-radius: 10px;
     padding: 10px; 
 }
@@ -142,6 +151,7 @@ a{
         display: none;
         position: absolute;
         width: 70%;
+        z-index: 1;
         right: 0;
         flex-direction: column;
     }
@@ -371,3 +381,22 @@ a{
     }
     
 }
+footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+}
+
+
+
