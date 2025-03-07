@@ -399,4 +399,45 @@ footer {
 }
 
 
+/* House renting */
 
+#rent{
+    display: flex;
+    justify-content: space-around;
+}
+.rentlist{
+    background-color: #2d2e2e;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.renting{
+    filter: brightness(0) invert(0); 
+}
+
+.damn{
+    margin: 20px 0;
+    height: 150px;
+    width: 150px;
+    background-color: #040F0F;
+}
+
+@media  screen and (max-width: 780px) {
+    #rent{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 20px 0;
+    }
+    .rentlist{
+        width: 80%;
+        margin: 10px;
+
+    }
+}
