@@ -81,12 +81,12 @@ header ul li a{
     align-items: center;
 }
 
-/* 
-img{
+
+.servlists img{
     filter: brightness(0) invert(1);  
     height: 100px;
     width: 100px; 
-} */
+}
 
 #mvs{
     height: 300px;
@@ -104,10 +104,10 @@ img{
     border-radius: 10px;
 }
 
-/* img:hover{
+.servlists img:hover{
     filter: brightness(0) invert(0); 
     
-} */
+}
 a{
     text-decoration: none;
     color: white;
