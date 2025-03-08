@@ -142,9 +142,9 @@ a{
        line-height: 50px;
     }
 
-    img{
-        height: 50px;
-        width: 50px;
+    .servlists img{
+        height: 40px;
+        width: 40px;
     }
 
     nav{
