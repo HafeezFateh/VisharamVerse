@@ -81,12 +81,12 @@ header ul li a{
     align-items: center;
 }
 
-
+/* 
 img{
     filter: brightness(0) invert(1);  
     height: 100px;
     width: 100px; 
-}
+} */
 
 #mvs{
     height: 300px;
@@ -104,10 +104,10 @@ img{
     border-radius: 10px;
 }
 
-img:hover{
+/* img:hover{
     filter: brightness(0) invert(0); 
     
-}
+} */
 a{
     text-decoration: none;
     color: white;
@@ -401,9 +401,14 @@ footer {
 
 /* House renting */
 
-#rent{
+/* #rent{
     display: flex;
     justify-content: space-around;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 .rentlist{
     background-color: #2d2e2e;
@@ -412,32 +417,130 @@ footer {
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    box-shadow: 0 1px 10px rgba(0, 0 , 0 , 0.9);
+} */
+/* .rentlist h1,h3,p{
+    margin: 10px;
+    color: white;
+
+} */
+#rent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
-.renting{
-    filter: brightness(0) invert(0); 
+.rentlist{
+    background-color: #2d2e2e;
+    height: 300px;
+    width: 90%;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.rentlist img{
+    height: auto;
+    width: 30%;
+    border-radius: 10px 0 0 10px;
 }
 
-.damn{
-    margin: 20px 0;
-    height: 150px;
-    width: 150px;
-    background-color: #040F0F;
+.rentlist .rentdetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    width: 70%;
+ 
+}
+.rentdetails h1,p{
+    padding: 10px;
+}
+.owner{
+    background-color: #0c1618;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    
 }
 
+.owner .ownerprofile{
+    border-radius: 50%;
+    background-color: seagreen;
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+  
+} 
+.owner .ownerdetails{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    width: 80%;
+
+
+}
+.ownerdetails button{
+    align-self: flex-end;
+    margin-top: auto;
+}
+.ownerdetails h1,p{
+    
+}
+.owner button{
+    border: 2px solid steelblue;
+    background-color: aliceblue;
+    color: black;
+    
+    /* margin-top: 20px; */
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.rentdetails h1,p{
+    margin: 10px;
+}
 @media  screen and (max-width: 780px) {
     #rent{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
-        align-items: center;
         margin: 20px 0;
     }
     .rentlist{
-        width: 80%;
-        margin: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        color: white;
 
     }
+    .rentlist img,.owner{
+        display: none;
+    } 
+  
+    .rentlist img{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px 10px 0 0;
+        
+    }
+    
+
+    .owner{
+        width: 100%;
+        flex: 1;
+
+    }
+    
 }
